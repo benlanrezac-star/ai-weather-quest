@@ -1,0 +1,18 @@
+{
+  "project": "ai-weather-quest",
+  "updated": "2026-10-14",
+  "features": [
+    {"id": "F01", "name": "registration", "description": "Team + model registered, submission password received", "milestone": "2026-10-19", "status": "todo"},
+    {"id": "F02", "name": "repo-skeleton", "description": "uv, src/, tests/, pytest, CI on push", "milestone": "2026-10-19", "status": "todo"},
+    {"id": "F03", "name": "data-access", "description": "Download ECMWF S2S realtime + reforecast (2t) and ERA5 weekly tas via package", "milestone": "2026-10-19", "status": "todo"},
+    {"id": "F04", "name": "submission-chain-test", "description": "Climatology forecast submitted via ECBox under a test model name", "milestone": "2026-10-22", "status": "todo"},
+    {"id": "F05", "name": "training-set", "description": "Reforecast features + ERA5 quintile labels, leak-free temporal split", "milestone": "2026-10-26", "status": "todo"},
+    {"id": "F06", "name": "baselines", "description": "Climatology and raw-IFS quintile probabilities, RPSS on validation", "milestone": "2026-10-26", "status": "todo"},
+    {"id": "F07", "name": "model-v1", "description": "Calibration model (multinomial logistic or GBM), MLflow tracking", "milestone": "2026-11-02", "status": "todo"},
+    {"id": "F08", "name": "trial-submission-v1", "description": "Real v1 submission in Bridge period", "milestone": "2026-11-05", "status": "todo"},
+    {"id": "F09", "name": "automation", "description": "Docker + scheduled GitHub Actions (Saturday, Sunday retry, failure alert, climatology fallback, weekly commit of scores so the schedule is not disabled after 60 days of inactivity)", "milestone": "2026-11-09", "status": "todo"},
+    {"id": "F10", "name": "go-no-go", "description": "Full dry run and decision", "milestone": "2026-11-11", "status": "todo"},
+    {"id": "F11", "name": "djf-submissions", "description": "13 consecutive weekly submissions, scores stored in DuckDB", "milestone": "2027-02-04", "status": "todo"},
+    {"id": "F12", "name": "methodology-note", "description": "Model summary questionnaire + public method note", "milestone": "2027-02-08", "status": "todo"}
+  ]
+}

@@ -1,0 +1,15 @@
+project_name=AI Weather Quest
+repo_name=ai-weather-quest
+repo_visibility=public
+owner=Benjamin Lanrezac
+language=fr
+code_language=python3
+package_manager=uv
+variable=tas
+periods=DJF2026
+first_submission=2026-11-12
+last_submission=2027-02-04
+go_no_go=2026-11-11
+hours_budget_until_2026-11-12=17h/week
+hours_budget_after=10h/week
+hours_log=Google Sheet "Planning formation ML 2026-2027" > onglet "Relevé d'heures" > bloc "Compétition + dépôt"
