@@ -33,7 +33,12 @@ Légende : [ ] à faire · [~] en cours · [x] fait · (B) = Benjamin seul · (C
 - [ ] (B) Lire le questionnaire de résumé de modèle (PDF), à remplir avant DJF.
 
 ## Semaine du 19 oct. (jalon 1)
-- [ ] Squelette du dépôt : uv, src/, tests/, pytest, CI.
+- [x] (C) Squelette du dépôt : uv, src/, tests/, pytest, CI (15/10, D-007).
+- [x] (C) Modules grid, rps, climatology + 26 tests (15/10, D-008).
+- [ ] (B) Valider D-009 (plan de téléchargement S2S) et trancher l'option A/B/C (docs/plan-telechargement-s2s.md § 7).
+- [ ] (C) Après D-009 : construction des requêtes ECDS (testée sans réseau) + test minimal réel (§ 8 du plan).
+- [ ] (B) Ajouter le secret `ECDS_KEY` (GitHub Secrets + .env local) une fois la clé ECDS obtenue.
+- [ ] (C) Vérifier que le 1er run CI GitHub Actions est vert.
 - [ ] Téléchargement d'un échantillon : IFS S2S (prévision + reprévision) et ERA5 via le package.
 - [ ] Climatologie de référence via retrieve_evaluation_data.
 - [ ] Premier essai de soumission ECBox avec le modèle d'essai, jeudi 22 oct. (si D-006 est validée).

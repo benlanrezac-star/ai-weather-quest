@@ -46,3 +46,26 @@ Toute décision qui touche le modèle soumis ou le calendrier reste PROPOSÉE ta
 - À confirmer :
   - qu'un modèle « climatologie » est acceptable en essai Bridge (question au forum ou à aiweatherquest@ecmwf.int) ;
   - si l'inscription d'un 2e modèle se fait après coup, depuis le tableau de bord.
+
+## D-007 · Outillage : Python 3.12, uv, layout src/, CI 3.11 + 3.12 — ADOPTÉE
+- Date : 15/10/2026.
+- `.python-version` = 3.12 (version installée en local) ; `requires-python >=3.11,<3.13`.
+- Backend de build `uv_build`, package `aiwq` sous `src/`, dépendances figées dans `uv.lock`.
+- CI : GitHub Actions `tests.yml`, ubuntu-latest, uv 0.11.14 figé, matrice 3.11 / 3.12, `uv sync --locked` puis `uv run pytest`.
+- Pourquoi 3.11 aussi : compatibilité de sites-toolkit non vérifiée ; on garde la porte ouverte sans coût.
+
+## D-008 · Convention de score alignée sur AI-WQ-package 3.32 — ADOPTÉE
+- Date : 15/10/2026. Source : `forecast_evaluation.py` et `check_fc_submission.py` (roue PyPI 3.32), comportement vérifié en exécutant `calculate_RPS` sur un cas jouet.
+- RPS = somme sur les 5 quintiles des écarts cumulés au carré, sans division par K-1.
+- Masque terre : points à fraction ≥ 0,5 ; pondération cos(lat).
+- RPSS de période = 1 − Σ w·RPS_fc / Σ w·RPS_clim, sur tous les points et toutes les semaines.
+- Une prévision NaN est comptée comme une probabilité nulle (RPS = 5 au pire), comme dans le code officiel. Les points d'observation tout-NaN sont exclus.
+- Le contrôle de format `aiwq.grid.check_submission_array` est plus strict que l'officiel :
+  - aucun NaN accepté (l'officiel rejette de toute façon un point tout-NaN, car sa somme vaut 0) ;
+  - somme des quintiles à 1 ± 1e-6 (l'officiel tolère ± 0,2).
+
+## D-009 · Téléchargement S2S : cdsapi sur ECDS, réduction immédiate en moyennes hebdo — PROPOSÉE
+- Date : 15/10/2026. Détail : `docs/plan-telechargement-s2s.md`.
+- Bibliothèque `cdsapi>=0.7.7`, client construit avec `ECDS_KEY`.
+- Jeux `s2s-forecasts` et `s2s-reforecasts`, variable `2_m_temperature`, échéances `432_456` … `744_768`.
+- Question liée, à trancher (touche le modèle soumis) : calibration à la volée (A, recommandée), entraînement figé sur l'hiver 2025/26 (B) ou sur sept.-oct. 2026 (C).

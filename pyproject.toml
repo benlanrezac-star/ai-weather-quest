@@ -1,0 +1,24 @@
+[project]
+name = "aiwq"
+version = "0.1.0"
+description = "Calibrated ECMWF S2S quintile forecasts of tas for the ECMWF AI Weather Quest"
+readme = "README.md"
+authors = [{ name = "Benjamin Lanrezac" }]
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "numpy>=2.4.6",
+    "xarray>=2026.9.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

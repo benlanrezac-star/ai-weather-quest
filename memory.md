@@ -18,7 +18,9 @@ Dernière vérification : 14/10/2026. Revérifier toute ligne avant de s'appuyer
 ## Format (source : doc AI-WQ-package, submit_forecast.html)
 - Variable 'tas', fc_period '1' ou '2', fc_start_date 'YYYYMMDD' (jeudi).
 - Tableau (5, 121, 240) : quintile [0.2..1.0] × lat 90 → -90 pas -1.5 × lon 0 → 358.5.
-- Somme sur l'axe quintile = 1 ; valeurs dans [0, 1] ; NaN autorisés.
+- Somme sur l'axe quintile = 1 (contrôle officiel : atol 0,2) ; valeurs dans [0, 1] (tol 1e-5).
+- NaN : le message du package les dit « permis », mais la somme avec skipna fait échouer un point tout-NaN, et le score officiel le compte RPS = 5 (pire cas). → Ne jamais soumettre de NaN (vérifié le 15/10/2026 sur AI-WQ-package 3.32).
+- Dims attendues : quintile, latitude, longitude. Obs officielles : quintile étiqueté 0..4.
 - teamname et modelname doivent être ceux de l'inscription.
 - Nom de fichier : tas_YYYYMMDD_p1_<team>_<model>.nc. Vérification : AI_WQ_check_submission.
 
@@ -41,6 +43,8 @@ Dernière vérification : 14/10/2026. Revérifier toute ligne avant de s'appuyer
 - Reprévisions ECMWF : à la volée, 20 dernières années, 10+1 membres, les jours impairs du mois (1, 3, …, 31, hors 29 févr.).
 - Conséquence : prévision du jeudi 00 UTC disponible au plus tôt le samedi 00 UTC → ~48 h utiles avant la clôture.
 - Incident documenté : données ECDS absentes du 22 au 27/07/2026 ; soumission par e-mail acceptée dans ce cas (forum, fil 15190).
+- Accès ECDS (vérifié le 15/10/2026) : WEB-API fermée le 27/05/2026 ; API https://ecds.ecmwf.int/api ; client cdsapi ≥ 0.7.7 ; jeux `s2s-forecasts` / `s2s-reforecasts` ; variable `2_m_temperature` ; échéances moyennes journalières `a_b` (ex. `432_456`) ; pas de clé `number` ; reprévision = year/month/day (version du modèle) + hyear/hmonth/hday.
+- Semaines AI-WQ : observations du lundi au dimanche → depuis l'initialisation du jeudi 00 UTC, p1 = 432-600 h, p2 = 600-768 h.
 - Tableau S2S indique CY49R1 ; un cycle CY50r1 est opérationnel depuis mai 2026 (Tech Memo 938) → à clarifier.
 
 ## Règles sensibles (T&C art. 4)

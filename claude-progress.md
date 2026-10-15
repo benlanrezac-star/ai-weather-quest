@@ -40,3 +40,29 @@ Statut : terminée.
 ### Prochaine session
 - Squelette du dépôt : uv, src/, tests/, pytest, CI GitHub Actions sur push.
 - Choix de l'environnement local (Windows natif / WSL2 / Docker) pour sites-toolkit et cartopy.
+
+## Session 2 — 15/10/2026 — Squelette du dépôt et métriques
+Statut : terminée côté Claude ; D-009 en attente de Benjamin.
+
+### Fait
+- Squelette : pyproject.toml (uv_build), uv.lock, .python-version 3.12, src/aiwq/, tests/, CI `.github/workflows/tests.yml` (D-007).
+- `aiwq.grid` : grille 1,5° + `check_submission_array` (plus strict que l'officiel : pas de NaN, somme ± 1e-6).
+- `aiwq.rps` : RPS / RPSS alignés sur AI-WQ-package 3.32 (D-008).
+- `aiwq.climatology` : prévision 0,2 partout, baseline et repli.
+- `uv run pytest` : 26 tests passent en local (Windows, Python 3.12.10).
+- Plan de téléchargement S2S écrit, sans code : docs/plan-telechargement-s2s.md (D-009, PROPOSÉE).
+
+### Constats
+- Les NaN sont pénalisés au maximum par le score officiel (RPS = 5), et un point tout-NaN échoue au contrôle officiel. memory.md est corrigé.
+- WEB-API S2S fermée depuis le 27/05/2026 : seul l'ECDS fonctionne.
+- Reprévisions à la volée + changement de cycle en mai 2026 : pas de reprévisions d'hiver du cycle actuel avant cet hiver → question A/B/C dans le plan.
+
+### Comparaison aux jalons (au 15/10)
+- Jalon du 19 oct. : le squelette est fait, en avance.
+- Sur le chemin critique, encore bloqués côté Benjamin :
+  - inscription et mot de passe de soumission ;
+  - clé ECDS + licence S2S ;
+  - D-004 et D-006.
+- L'essai ECBox du 22 oct. dépend de l'inscription et de D-006.
+- Le téléchargement S2S réel dépend de la clé ECDS et de D-009.
+- Pas de retard qui menace le 12 nov. à ce stade. Si l'inscription n'est pas faite d'ici le 20 oct., l'essai du 22 oct. glisse au 29 oct. et il ne reste qu'une semaine de marge avant le 5 nov.
