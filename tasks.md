@@ -22,9 +22,9 @@ Légende : [ ] à faire · [~] en cours · [x] fait · (B) = Benjamin seul · (C
 
 ### Dépôt
 - [x] (B) Configurer git (user.name, user.email noreply), git init, .gitignore.
-- [~] (C) Copier les fichiers de suivi dans le dépôt local.
-- [ ] (B) Créer le dépôt GitHub public `ai-weather-quest`, vide (sans README, .gitignore ni licence).
-- [ ] (B) Premier commit + push.
+- [x] (C) Copier les fichiers de suivi dans le dépôt local.
+- [x] (B) Créer le dépôt GitHub public `ai-weather-quest` (github.com/benlanrezac-star/ai-weather-quest).
+- [x] (B) Premier commit + push (15/10/2026).
 - [ ] (C) Décider si l'environnement local est Windows natif, WSL2 ou Docker.
   - Raison : sites-toolkit et cartopy ne sont documentés que pour Linux.
 

@@ -22,3 +22,21 @@ Statut : terminée côté Claude ; actions de Benjamin en attente.
 1. Benjamin tranche D-003 à D-006.
 2. Inscription faite, mot de passe reçu.
 3. Squelette du dépôt et premier téléchargement S2S.
+
+## Session 1 (suite) — 15/10/2026 — Dépôt GitHub en place
+Statut : terminée.
+
+### Fait
+- Dépôt public créé : https://github.com/benlanrezac-star/ai-weather-quest
+- Premier commit `23dec3a` (fichiers de suivi + .gitignore) poussé sur main.
+- Dossier local : C:\Users\Benjamin\dev\ai-weather-quest (Windows, PowerShell).
+- Compte GitHub : benlanrezac-star ; e-mail git = adresse noreply.
+
+### Toujours en attente (Benjamin)
+- Trancher D-003 à D-006 (decisions.md), surtout D-005 (noms) qui bloque l'inscription.
+- Inscription AI Weather Quest + réception du mot de passe de soumission.
+- Accès ECDS (licence S2S, clé API).
+
+### Prochaine session
+- Squelette du dépôt : uv, src/, tests/, pytest, CI GitHub Actions sur push.
+- Choix de l'environnement local (Windows natif / WSL2 / Docker) pour sites-toolkit et cartopy.
