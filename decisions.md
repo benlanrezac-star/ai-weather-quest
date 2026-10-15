@@ -32,10 +32,11 @@ Toute décision qui touche le modèle soumis ou le calendrier reste PROPOSÉE ta
   - procédure manuelle de secours le dimanche avant 20:00 UTC.
 - Remplace « GitHub Actions planifié le jeudi » dans les jalons.
 
-## D-005 · Noms d'équipe et de modèle — PROPOSÉE (Benjamin choisit)
-- Le nom du modèle est figé sur toute la période DJF : il ne doit pas contenir de numéro de version qui deviendrait faux.
-- Options pour le modèle : `lanrezacIFScal`, `IFSquintcal`, `BLcalib`.
-- Options pour l'équipe : `Lanrezac`, `BLmetocean`.
+## D-005 · Noms d'équipe et de modèle — ADOPTÉE
+- Date : 15/10/2026.
+- Équipe : `SoleWQ`. Modèle : `MetoceanML`.
+- Ces noms doivent être utilisés à l'identique (casse comprise) dans AI_WQ_create_empty_dataarray et AI_WQ_forecast_submission.
+- Le nom du modèle est figé sur toute la période DJF.
 - Type de modèle à l'inscription : Post-processing.
 
 ## D-006 · Modèle d'essai séparé pendant le Bridge — PROPOSÉE
