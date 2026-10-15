@@ -73,7 +73,7 @@ Conséquences :
 - Reprévision : date de version ≤ jeudi. Les années de reprévision s'arrêtent à l'année précédente.
 - Les bornes de quintiles et la vérité viennent d'ERA5 via le package AI-WQ. Le découpage entraînement / validation se fait par année de reprévision (à fixer en D-0xx avec le jeu d'entraînement).
 
-## 7. Question ouverte — à trancher par Benjamin (touche le modèle soumis)
+## 7. Choix du modèle soumis — tranché : option A (D-010, 15/10/2026)
 
 Les reprévisions ECMWF sont produites à la volée avec le cycle en cours. Or un nouveau cycle est opérationnel depuis mai 2026 (CY50r1 selon le Tech Memo 938, encore à confirmer). Conséquence : **aucune reprévision du cycle actuel n'existe pour des dates d'hiver (nov. → févr.) avant qu'elles ne soient produites cet hiver**.
 

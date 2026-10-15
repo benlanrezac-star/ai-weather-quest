@@ -35,7 +35,8 @@ Légende : [ ] à faire · [~] en cours · [x] fait · (B) = Benjamin seul · (C
 ## Semaine du 19 oct. (jalon 1)
 - [x] (C) Squelette du dépôt : uv, src/, tests/, pytest, CI (15/10, D-007).
 - [x] (C) Modules grid, rps, climatology + 26 tests (15/10, D-008).
-- [ ] (B) Valider D-009 (plan de téléchargement S2S) et trancher l'option A/B/C (docs/plan-telechargement-s2s.md § 7).
+- [x] (B) Option A/B/C tranchée : A, calibration à la volée (D-010, 15/10).
+- [ ] (B) Valider le reste de D-009 (cdsapi, clés de requête, réduction en moyennes hebdo) et dire si l'hiver 2025/26 peut servir à la validation hors ligne.
 - [ ] (C) Après D-009 : construction des requêtes ECDS (testée sans réseau) + test minimal réel (§ 8 du plan).
 - [ ] (B) Ajouter le secret `ECDS_KEY` (GitHub Secrets + .env local) une fois la clé ECDS obtenue.
 - [x] (C) 1er run CI GitHub Actions vert (3.11 + 3.12, 15/10).

@@ -68,4 +68,15 @@ Toute décision qui touche le modèle soumis ou le calendrier reste PROPOSÉE ta
 - Date : 15/10/2026. Détail : `docs/plan-telechargement-s2s.md`.
 - Bibliothèque `cdsapi>=0.7.7`, client construit avec `ECDS_KEY`.
 - Jeux `s2s-forecasts` et `s2s-reforecasts`, variable `2_m_temperature`, échéances `432_456` … `744_768`.
-- Question liée, à trancher (touche le modèle soumis) : calibration à la volée (A, recommandée), entraînement figé sur l'hiver 2025/26 (B) ou sur sept.-oct. 2026 (C).
+- Question liée (A/B/C) : tranchée par D-010.
+
+## D-010 · Modèle soumis : calibration à la volée (option A) — ADOPTÉE
+- Date : 15/10/2026. Validée par Benjamin.
+- Chaque semaine, le modèle est ajusté sur la reprévision ECMWF de la date de version associée au jeudi (jour impair ≤ jeudi, cf. D-003) : même cycle et même saison que la prévision du jour.
+- Pourquoi : aucune reprévision d'hiver du cycle actuel n'existe avant cet hiver (reprévisions à la volée + changement de cycle en mai 2026). B (ancien cycle) et C (hors saison) introduisent un biais.
+- Conséquences :
+  - la tâche du samedi télécharge le temps réel ET la reprévision, soit ~0,2 à 0,4 Go par semaine ;
+  - l'ajustement se fait dans la tâche hebdomadaire : il doit être rapide et sans réglage manuel ;
+  - l'échantillon d'entraînement est petit (20 ans × 11 membres par date), d'où un modèle peu paramétré pour la v1.
+- Encore PROPOSÉ : utiliser l'hiver 2025/26 (option B) uniquement pour la validation hors ligne, jamais pour la soumission.
+- À vérifier au test minimal : que la reprévision de la date de version est publiée au plus tard le samedi 00 UTC. Sinon, prendre la date de version impaire précédente.

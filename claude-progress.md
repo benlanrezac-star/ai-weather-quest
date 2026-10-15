@@ -55,7 +55,7 @@ Statut : terminée côté Claude ; D-009 en attente de Benjamin.
 ### Constats
 - Les NaN sont pénalisés au maximum par le score officiel (RPS = 5), et un point tout-NaN échoue au contrôle officiel. memory.md est corrigé.
 - WEB-API S2S fermée depuis le 27/05/2026 : seul l'ECDS fonctionne.
-- Reprévisions à la volée + changement de cycle en mai 2026 : pas de reprévisions d'hiver du cycle actuel avant cet hiver → question A/B/C dans le plan.
+- Reprévisions à la volée + changement de cycle en mai 2026 : pas de reprévisions d'hiver du cycle actuel avant cet hiver → Benjamin a choisi l'option A, calibration à la volée (D-010).
 
 ### Comparaison aux jalons (au 15/10)
 - Jalon du 19 oct. : le squelette est fait, en avance.
