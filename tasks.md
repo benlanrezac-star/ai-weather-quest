@@ -8,7 +8,7 @@ Légende : [ ] à faire · [~] en cours · [x] fait · (B) = Benjamin seul · (C
 - [ ] (B) Valider ou modifier D-003 à D-006 dans decisions.md.
 
 ### Inscription
-- [ ] (B) S'inscrire sur aiweatherquest.ecmwf.int, une fois les noms de D-005 choisis.
+- [x] (B) S'inscrire sur aiweatherquest.ecmwf.int, une fois les noms de D-005 choisis (fait le 19/10).
   - Type de modèle : Post-processing.
   - Résultats publics (le but est de les montrer en entretien).
 - [ ] (B) Vérifier la réception de l'e-mail contenant le mot de passe de soumission.
