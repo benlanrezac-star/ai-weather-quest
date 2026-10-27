@@ -65,4 +65,11 @@ Statut : terminée côté Claude ; D-009 en attente de Benjamin.
   - D-004 et D-006.
 - L'essai ECBox du 22 oct. dépend de l'inscription et de D-006.
 - Le téléchargement S2S réel dépend de la clé ECDS et de D-009.
-- Pas de retard qui menace le 12 nov. à ce stade. Si l'inscription n'est pas faite d'ici le 20 oct., l'essai du 22 oct. glisse au 29 oct. et il ne reste qu'une semaine de marge avant le 5 nov.
+- Pas de retard qui menace le 12 nov. à ce stade (au 15/10).
+
+## Session 3 — 19 → 27/10/2026 — Accès aux données
+- 19/10 : inscription faite par Benjamin. .env.example ajouté.
+- 22/10 : .env local rempli (AIWQ_PASSWORD, ECDS_KEY). Premier test ECDS : 403, licence non acceptée.
+- 27/10 : tests ECDS réussis (temps réel et reprévision). La file ECDS a pris 79 min pour la reprévision, ce qui menace la tâche du samedi (D-010) → voir memory.md.
+- Retard : le jalon du 26 oct. (jeu d'entraînement + RPSS en validation) n'est pas tenu.
+- Toujours en attente : D-009, D-006, GitHub Secrets. Si l'inscription n'est pas faite d'ici le 20 oct., l'essai du 22 oct. glisse au 29 oct. et il ne reste qu'une semaine de marge avant le 5 nov.

@@ -44,6 +44,10 @@ Dernière vérification : 14/10/2026. Revérifier toute ligne avant de s'appuyer
 - Conséquence : prévision du jeudi 00 UTC disponible au plus tôt le samedi 00 UTC → ~48 h utiles avant la clôture.
 - Incident documenté : données ECDS absentes du 22 au 27/07/2026 ; soumission par e-mail acceptée dans ce cas (forum, fil 15190).
 - Accès ECDS (vérifié le 15/10/2026) : WEB-API fermée le 27/05/2026 ; API https://ecds.ecmwf.int/api ; client cdsapi ≥ 0.7.7 ; jeux `s2s-forecasts` / `s2s-reforecasts` ; variable `2_m_temperature` ; échéances moyennes journalières `a_b` (ex. `432_456`) ; pas de clé `number` ; reprévision = year/month/day (version du modèle) + hyear/hmonth/hday.
+- Mesures du 27/10/2026 (clé et licences OK) :
+  - temps réel, contrôle, 1 champ : 58 Ko, 266 s ;
+  - reprévision, perturbed, 1 année × 1 échéance (10 membres) : 569 Ko, **4 725 s (79 min)** de file d'attente.
+  - La taille ne pose aucun problème ; c'est la latence de la file qui est le risque.
 - Semaines AI-WQ : observations du lundi au dimanche → depuis l'initialisation du jeudi 00 UTC, p1 = 432-600 h, p2 = 600-768 h.
 - Tableau S2S indique CY49R1 ; un cycle CY50r1 est opérationnel depuis mai 2026 (Tech Memo 938) → à clarifier.
 
