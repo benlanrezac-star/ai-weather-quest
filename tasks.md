@@ -30,7 +30,7 @@ Légende : [ ] à faire · [~] en cours · [x] fait · (B) = Benjamin seul · (C
 
 ### Lecture
 - [ ] (B) Regarder le pas-à-pas du package (YouTube, webinaire « What's Next », 16/07/2026).
-- [ ] (B) Lire le questionnaire de résumé de modèle (PDF), à remplir avant DJF.
+- [~] (C) Questionnaire de résumé de modèle : brouillon docs/model-summary.md (27/10). À remplir dans les 4 dernières semaines de DJF.
 
 ## Semaine du 19 oct. (jalon 1)
 - [x] (C) Squelette du dépôt : uv, src/, tests/, pytest, CI (15/10, D-007).
