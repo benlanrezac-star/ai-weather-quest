@@ -22,3 +22,15 @@ addopts = "-ra"
 dev = [
     "pytest>=9.1.1",
 ]
+submit = [
+    "ai-wq-package>=3.33",
+    "sites-toolkit>=20261005.1",
+]
+
+[[tool.uv.index]]
+name = "ecmwf"
+url = "https://get.ecmwf.int/repository/pypi-all/simple"
+explicit = true
+
+[tool.uv.sources]
+sites-toolkit = { index = "ecmwf" }
