@@ -39,7 +39,10 @@ Toute décision qui touche le modèle soumis ou le calendrier reste PROPOSÉE ta
 - Le nom du modèle est figé sur toute la période DJF.
 - Type de modèle à l'inscription : Post-processing.
 
-## D-006 · Modèle d'essai séparé pendant le Bridge — PROPOSÉE
+## D-006 · Modèle d'essai séparé pendant le Bridge — REMPLACÉE (28/10/2026)
+- Remplacement validé par Benjamin : le tableau de bord ne permet pas d'ajouter un 2e modèle. Les essais Bridge (29/10 et 5/11) se font donc sous `MetoceanML`.
+- Conséquence : les essais sont publics sous le nom définitif. Une climatologie y donne un RPSS de 0, sans effet sur le classement DJF.
+- Texte d'origine ci-dessous, pour mémoire.
 - Inscrire un 2e nom de modèle (ex. `chaintest`) pour tester la chaîne pendant le Bridge, avec une prévision climatologique.
 - Le modèle v1 n'apparaît qu'à partir de son premier essai réel.
 - Permet de tester ECBox dès le 22 ou le 29 oct. sans attendre la v1.

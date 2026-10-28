@@ -25,7 +25,8 @@ Dernière vérification : 14/10/2026. Revérifier toute ligne avant de s'appuyer
 - Nom de fichier : tas_YYYYMMDD_p1_<team>_<model>.nc. Vérification : AI_WQ_check_submission.
 
 ## Outils (doc installation + forum, fil 15249)
-- AI-WQ-package ≥ 3.32 (3.32 ne tente plus le FTP, 22/09/2026 ; FTP fermé le 04/09/2026).
+- AI-WQ-package ≥ 3.32 (3.32 ne tente plus le FTP, 22/09/2026 ; FTP fermé le 04/09/2026). Version 3.33 disponible au 28/10/2026.
+- Installation Windows testée le 28/10/2026 : AI-WQ-package 3.33 + sites-toolkit 20261005.1 s’installent et s’importent (Python 3.12, uv). Soumission ECBox pas encore testée.
 - sites-toolkit ≥ 20261005.1, depuis https://get.ecmwf.int/repository/pypi-all/simple (ECBox).
 - Installation documentée « on Linux » → GitHub Actions (Linux) OK ; Windows local NON vérifié.
 - Mot de passe de soumission envoyé par e-mail à l'inscription. Des équipes signalent des e-mails non reçus (08/10/2026).
