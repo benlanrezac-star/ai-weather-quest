@@ -42,6 +42,7 @@ Légende : [ ] à faire · [~] en cours · [x] fait · (B) = Benjamin seul · (C
 - [x] (C) 1er run CI GitHub Actions vert (3.11 + 3.12, 15/10).
 - [ ] Téléchargement d'un échantillon : IFS S2S (prévision + reprévision) et ERA5 via le package.
 - [ ] Climatologie de référence via retrieve_evaluation_data.
-- [ ] Premier essai de soumission ECBox avec le modèle d'essai, jeudi 22 oct. (si D-006 est validée).
+- [ ] (C) Premier essai de soumission ECBox : climatologie sous SoloWQ / MetoceanML, init. jeudi 29/10. À lancer entre jeudi 00 UTC et dimanche 23:59 UTC :
+  `uv run --group submit python -m aiwq.submit --date 20261029 --submit`. Le test à blanc est OK depuis le 28/10.
 
 ## Plus tard (voir jalons dans CLAUDE.md)

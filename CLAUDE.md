@@ -47,7 +47,7 @@ Les jalons ci-dessous intègrent D-004, qui est encore PROPOSÉE.
 - Vérifier en ligne toute règle, date ou format de soumission avant de s'en servir ; citer la source et la date.
 - Toute décision qui change le modèle soumis ou le calendrier : demander d'abord. Toute décision d'arbitrage → decisions.md, numérotée.
 - Planning : à chaque session, comparer l'avancement aux jalons ; signaler tout retard qui menace le 12 nov. 2026. Signaler tout travail qui ne laisse rien de visible dans le dépôt.
-- Inscription : équipe `SoleWQ`, modèle `MetoceanML` (casse exacte).
+- Inscription : équipe `SoloWQ`, modèle `MetoceanML` (casse exacte).
 - Environnement : Windows + PowerShell, dépôt C:\Users\Benjamin\dev\ai-weather-quest, distant github.com/benlanrezac-star/ai-weather-quest.
 
 ## Fin de session (obligatoire)

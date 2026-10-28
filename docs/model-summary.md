@@ -1,6 +1,6 @@
 # AI Weather Quest — Model summary questionnaire (draft)
 
-Team `SoleWQ` · Model `MetoceanML` · Variable: `tas` · Period: DJF 2026/27
+Team `SoloWQ` · Model `MetoceanML` · Variable: `tas` · Period: DJF 2026/27
 
 > **Draft, 27/10/2026.** Answers describe the method as designed (decisions D-001 to D-010 in `decisions.md`).
 > Items marked `[TO CONFIRM]` depend on work not done yet. They must be filled in from actual results before submission.

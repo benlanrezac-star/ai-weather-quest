@@ -1,1 +1,1 @@
-"""AI Weather Quest submission chain (team SoleWQ, model MetoceanML)."""
+"""AI Weather Quest submission chain (team SoloWQ, model MetoceanML)."""

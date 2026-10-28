@@ -23,7 +23,7 @@ import xarray as xr
 from aiwq import grid
 from aiwq.climatology import climatology_forecast
 
-TEAM = "SoleWQ"
+TEAM = "SoloWQ"
 MODEL = "MetoceanML"
 VARIABLE = "tas"
 PERIODS = ("1", "2")

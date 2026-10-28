@@ -34,7 +34,7 @@ Toute décision qui touche le modèle soumis ou le calendrier reste PROPOSÉE ta
 
 ## D-005 · Noms d'équipe et de modèle — ADOPTÉE
 - Date : 15/10/2026.
-- Équipe : `SoleWQ`. Modèle : `MetoceanML`.
+- Équipe : `SoloWQ` (corrigé le 28/10/2026 : c'est le nom enregistré dans le registre public AI-WQ ; `SoleWQ` y est inconnu). Modèle : `MetoceanML`.
 - Ces noms doivent être utilisés à l'identique (casse comprise) dans AI_WQ_create_empty_dataarray et AI_WQ_forecast_submission.
 - Le nom du modèle est figé sur toute la période DJF.
 - Type de modèle à l'inscription : Post-processing.
@@ -67,7 +67,7 @@ Toute décision qui touche le modèle soumis ou le calendrier reste PROPOSÉE ta
   - aucun NaN accepté (l'officiel rejette de toute façon un point tout-NaN, car sa somme vaut 0) ;
   - somme des quintiles à 1 ± 1e-6 (l'officiel tolère ± 0,2).
 
-## D-009 · Téléchargement S2S : cdsapi sur ECDS, réduction immédiate en moyennes hebdo — PROPOSÉE
+## D-009 · Téléchargement S2S : cdsapi sur ECDS, réduction immédiate en moyennes hebdo — ADOPTÉE (28/10/2026)
 - Date : 15/10/2026. Détail : `docs/plan-telechargement-s2s.md`.
 - Bibliothèque `cdsapi>=0.7.7`, client construit avec `ECDS_KEY`.
 - Jeux `s2s-forecasts` et `s2s-reforecasts`, variable `2_m_temperature`, échéances `432_456` … `744_768`.

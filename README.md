@@ -1,6 +1,6 @@
 # ai-weather-quest
 
-Submission chain of team `SoleWQ`, model `MetoceanML`, for the
+Submission chain of team `SoloWQ`, model `MetoceanML`, for the
 [ECMWF AI Weather Quest](https://aiweatherquest.ecmwf.int/).
 
 Approach: statistical post-processing (calibration) of ECMWF S2S ensemble

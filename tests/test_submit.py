@@ -36,8 +36,8 @@ def test_dry_run_never_uploads():
 
     names = submit.run("20261029", False, None, no_check, no_registration, uploader)
     assert names == [
-        "tas_20261029_p1_SoleWQ_MetoceanML.nc",
-        "tas_20261029_p2_SoleWQ_MetoceanML.nc",
+        "tas_20261029_p1_SoloWQ_MetoceanML.nc",
+        "tas_20261029_p2_SoloWQ_MetoceanML.nc",
     ]
 
 
