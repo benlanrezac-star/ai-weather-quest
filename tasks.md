@@ -36,13 +36,12 @@ Légende : [ ] à faire · [~] en cours · [x] fait · (B) = Benjamin seul · (C
 - [x] (C) Squelette du dépôt : uv, src/, tests/, pytest, CI (15/10, D-007).
 - [x] (C) Modules grid, rps, climatology + 26 tests (15/10, D-008).
 - [x] (B) Option A/B/C tranchée : A, calibration à la volée (D-010, 15/10).
-- [ ] (B) Valider le reste de D-009 (cdsapi, clés de requête, réduction en moyennes hebdo) et dire si l'hiver 2025/26 peut servir à la validation hors ligne.
+- [x] (B) D-009 adoptée (28/10). Hiver 2025/26 en validation hors ligne : encore à confirmer.
 - [ ] (C) Après D-009 : construction des requêtes ECDS (testée sans réseau) + test minimal réel (§ 8 du plan).
 - [ ] (B) Ajouter le secret `ECDS_KEY` (GitHub Secrets + .env local) une fois la clé ECDS obtenue.
 - [x] (C) 1er run CI GitHub Actions vert (3.11 + 3.12, 15/10).
 - [ ] Téléchargement d'un échantillon : IFS S2S (prévision + reprévision) et ERA5 via le package.
 - [ ] Climatologie de référence via retrieve_evaluation_data.
-- [ ] (C) Premier essai de soumission ECBox : climatologie sous SoloWQ / MetoceanML, init. jeudi 29/10. À lancer entre jeudi 00 UTC et dimanche 23:59 UTC :
-  `uv run --group submit python -m aiwq.submit --date 20261029 --submit`. Le test à blanc est OK depuis le 28/10.
+- [x] (C) Premier essai de soumission ECBox : climatologie sous SoloWQ / MetoceanML, init. 29/10, p1 + p2 soumis le 29/10 à 13:20 UTC, confirmés par AI_WQ_check_submission.
 
 ## Plus tard (voir jalons dans CLAUDE.md)

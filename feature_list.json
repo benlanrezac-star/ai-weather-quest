@@ -1,11 +1,11 @@
 {
   "project": "ai-weather-quest",
-  "updated": "2026-10-15",
+  "updated": "2026-10-29",
   "features": [
-    {"id": "F01", "name": "registration", "description": "Team + model registered, submission password received", "milestone": "2026-10-19", "status": "todo"},
+    {"id": "F01", "name": "registration", "description": "Team + model registered, submission password received", "milestone": "2026-10-19", "status": "done"},
     {"id": "F02", "name": "repo-skeleton", "description": "uv, src/, tests/, pytest, CI on push", "milestone": "2026-10-19", "status": "done"},
     {"id": "F03", "name": "data-access", "description": "Download ECMWF S2S realtime + reforecast (2t) and ERA5 weekly tas via package", "milestone": "2026-10-19", "status": "in_progress"},
-    {"id": "F04", "name": "submission-chain-test", "description": "Climatology forecast submitted via ECBox under a test model name", "milestone": "2026-10-22", "status": "todo"},
+    {"id": "F04", "name": "submission-chain-test", "description": "Climatology forecast submitted via ECBox under a test model name", "milestone": "2026-10-22", "status": "done"},
     {"id": "F05", "name": "training-set", "description": "Reforecast features + ERA5 quintile labels, leak-free temporal split", "milestone": "2026-10-26", "status": "todo"},
     {"id": "F06", "name": "baselines", "description": "Climatology and raw-IFS quintile probabilities, RPSS on validation", "milestone": "2026-10-26", "status": "todo"},
     {"id": "F07", "name": "model-v1", "description": "Calibration model (multinomial logistic or GBM), MLflow tracking", "milestone": "2026-11-02", "status": "todo"},

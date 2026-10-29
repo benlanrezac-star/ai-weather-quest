@@ -73,3 +73,11 @@ Statut : terminée côté Claude ; D-009 en attente de Benjamin.
 - 27/10 : tests ECDS réussis (temps réel et reprévision). La file ECDS a pris 79 min pour la reprévision, ce qui menace la tâche du samedi (D-010) → voir memory.md.
 - Retard : le jalon du 26 oct. (jeu d'entraînement + RPSS en validation) n'est pas tenu.
 - Toujours en attente : D-009, D-006, GitHub Secrets. Si l'inscription n'est pas faite d'ici le 20 oct., l'essai du 22 oct. glisse au 29 oct. et il ne reste qu'une semaine de marge avant le 5 nov.
+
+## Session 4 — 28 → 29/10/2026 — Premier essai de soumission
+- 28/10 : `aiwq.submit` ajouté (contrôle à blanc par défaut, envoi avec `--submit`) ; groupe uv `submit` (AI-WQ-package 3.33 + sites-toolkit, index ECMWF). 38 tests.
+- 28/10 : le registre public nomme l'équipe `SoloWQ` (et non `SoleWQ`) → renommage partout, D-005 amendée. D-006 remplacée (essais sous MetoceanML). D-009 adoptée.
+- 29/10 : 1er envoi refusé (403 « Not a Branca token ») : `.env` contenait le mot de passe du site au lieu du jeton ECBox. Avec le jeton, **soumission climatologie p1 + p2 pour le 29/10 réussie** (13:20 UTC), depuis Windows.
+- Risque n° 4 (Windows) levé pour la soumission.
+- Prochain essai : 5 nov. (v1). Il faut d'abord coder le téléchargement IFS (D-009), puis la calibration.
+- Le secret GitHub `AIWQ_PASSWORD` doit contenir le jeton ECBox, pas le mot de passe du site.
