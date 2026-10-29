@@ -30,6 +30,7 @@ Dernière vérification : 14/10/2026. Revérifier toute ligne avant de s'appuyer
 - sites-toolkit ≥ 20261005.1, depuis https://get.ecmwf.int/repository/pypi-all/simple (ECBox).
 - Installation documentée « on Linux » → GitHub Actions (Linux) OK ; Windows local NON vérifié.
 - Mot de passe de soumission envoyé par e-mail à l'inscription. Des équipes signalent des e-mails non reçus (08/10/2026).
+- 29/10/2026 : ECBox refuse le mot de passe du compte du site (403 « Not a Branca token »). Il faut le jeton ECBox reçu par e-mail (doc AI-WQ : « password from the registration/technical update email »), et non le mot de passe de connexion au site.
 - Le package sert aussi : données d'entraînement ERA5 hebdo 1,5° (retrieve_annual_training_data, ≥ 1979, latence 3 mois), évaluation (retrieve_evaluation_data, forecast_evaluation).
 - GitHub : sur un dépôt public, les workflows planifiés sont désactivés après 60 jours sans activité → la tâche hebdo doit commiter (scores) chaque semaine.
 
