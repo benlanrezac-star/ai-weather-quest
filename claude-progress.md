@@ -81,3 +81,10 @@ Statut : terminée côté Claude ; D-009 en attente de Benjamin.
 - Risque n° 4 (Windows) levé pour la soumission.
 - Prochain essai : 5 nov. (v1). Il faut d'abord coder le téléchargement IFS (D-009), puis la calibration.
 - Le secret GitHub `AIWQ_PASSWORD` doit contenir le jeton ECBox, pas le mot de passe du site.
+
+## Session 5 — 04 → 25/11/2026 — Semaines DJF manquées
+- 04/11 : .gitignore complété (AI_WQ_unique_IDs.csv) ; options A/B/C pour DJF soumises à Benjamin, sans réponse.
+- 05/11 : pas de soumission (Bridge, sans conséquence).
+- 12/11 : contrôle à blanc OK, mais soumission non lancée faute de feu vert.
+- 25/11 : 12/11 et 19/11 confirmés manquants → exclusion du classement DJF. D-011 proposée (cible MAM 2027).
+- Cause : la chaîne dépend d'une action manuelle (feu vert + commande) ; aucune automatisation en place. C'est le risque n° 3 réalisé en avance.

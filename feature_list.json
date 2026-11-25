@@ -1,6 +1,6 @@
 {
   "project": "ai-weather-quest",
-  "updated": "2026-10-29",
+  "updated": "2026-11-25",
   "features": [
     {"id": "F01", "name": "registration", "description": "Team + model registered, submission password received", "milestone": "2026-10-19", "status": "done"},
     {"id": "F02", "name": "repo-skeleton", "description": "uv, src/, tests/, pytest, CI on push", "milestone": "2026-10-19", "status": "done"},
@@ -12,7 +12,7 @@
     {"id": "F08", "name": "trial-submission-v1", "description": "Real v1 submission in Bridge period", "milestone": "2026-11-05", "status": "todo"},
     {"id": "F09", "name": "automation", "description": "Docker + scheduled GitHub Actions (Saturday, Sunday retry, failure alert, climatology fallback, weekly commit of scores so the schedule is not disabled after 60 days of inactivity)", "milestone": "2026-11-09", "status": "todo"},
     {"id": "F10", "name": "go-no-go", "description": "Full dry run and decision", "milestone": "2026-11-11", "status": "todo"},
-    {"id": "F11", "name": "djf-submissions", "description": "13 consecutive weekly submissions, scores stored in DuckDB", "milestone": "2027-02-04", "status": "todo"},
+    {"id": "F11", "name": "djf-submissions", "description": "13 consecutive weekly submissions, scores stored in DuckDB", "milestone": "2027-02-04", "status": "failed"},
     {"id": "F12", "name": "methodology-note", "description": "Model summary questionnaire + public method note", "milestone": "2027-02-08", "status": "todo"}
   ]
 }

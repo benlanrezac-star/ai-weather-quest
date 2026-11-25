@@ -83,3 +83,12 @@ Toute décision qui touche le modèle soumis ou le calendrier reste PROPOSÉE ta
   - l'échantillon d'entraînement est petit (20 ans × 11 membres par date), d'où un modèle peu paramétré pour la v1.
 - Encore PROPOSÉ : utiliser l'hiver 2025/26 (option B) uniquement pour la validation hors ligne, jamais pour la soumission.
 - À vérifier au test minimal : que la reprévision de la date de version est publiée au plus tard le samedi 00 UTC. Sinon, prendre la date de version impaire précédente.
+
+## D-011 · Objectif reporté sur la période MAM 2027 — PROPOSÉE (change le calendrier)
+- Date : 25/11/2026.
+- Constat (vérifié via AI_WQ_check_submission) : aucune soumission pour les initialisations des 12/11 et 19/11. Les fenêtres sont fermées.
+- Conséquence : `MetoceanML` est exclu du classement agrégé DJF (règle : soumettre chaque semaine avec le même modèle, page Evaluation System, consultée le 04/11/2026). Les classements hebdomadaires restent ouverts.
+- Proposition :
+  - viser MAM 2027 (initialisations du 11/02 au 06/05/2027) pour 13 semaines complètes ;
+  - utiliser le reste de DJF comme banc d'essai réel : soumissions hebdomadaires, v1 dès qu'elle est prête. La contrainte « même modèle » ne joue plus sur DJF ;
+  - automatiser les soumissions (GitHub Actions) avant le 24/12, pour que les fêtes et les examens Cnam ne coûtent aucune semaine.
