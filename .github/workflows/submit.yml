@@ -1,0 +1,40 @@
+name: weekly-submission
+
+# Climatology v0 needs no IFS data, so it runs on Thursday (window opens
+# Thursday 00 UTC, closes Sunday 23:59 UTC). Friday and Saturday runs are
+# retries that do nothing if both periods are already on ECBox.
+on:
+  schedule:
+    - cron: "0 6 * * 4"
+    - cron: "0 6 * * 5"
+    - cron: "0 6 * * 6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-submission
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.11.14"
+          python-version: "3.12"
+      - run: uv sync --locked --group submit
+      - name: Submit (skipped if already on ECBox)
+        env:
+          AIWQ_PASSWORD: ${{ secrets.AIWQ_PASSWORD }}
+        run: uv run --group submit python -m aiwq.submit --submit --skip-if-submitted --log submissions/log.csv
+      - name: Commit submission log (keeps the schedule active)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add submissions/log.csv
+          git commit -m "Log weekly submission" || echo "nothing to commit"
+          git push

@@ -92,3 +92,10 @@ Toute décision qui touche le modèle soumis ou le calendrier reste PROPOSÉE ta
   - viser MAM 2027 (initialisations du 11/02 au 06/05/2027) pour 13 semaines complètes ;
   - utiliser le reste de DJF comme banc d'essai réel : soumissions hebdomadaires, v1 dès qu'elle est prête. La contrainte « même modèle » ne joue plus sur DJF ;
   - automatiser les soumissions (GitHub Actions) avant le 24/12, pour que les fêtes et les examens Cnam ne coûtent aucune semaine.
+
+## D-012 · Soumission hebdomadaire autorisée en permanence — ADOPTÉE
+- Date : 26/11/2026. Autorisation donnée par Benjamin : « Tu as l'autorisation de le faire chaque semaine ».
+- Claude soumet chaque semaine sans redemander. C'est la climatologie (v0) tant que la v1 n'est pas validée ; le passage à la v1 reste une décision de Benjamin.
+- Automatisation : `.github/workflows/submit.yml`. Le cron tourne jeudi, vendredi et samedi à 06:00 UTC ; les relances ne font rien si les deux périodes sont déjà sur ECBox. Le journal `submissions/log.csv` est commité à chaque passage (risque n° 6).
+- Remplace D-004 pour la v0 : la climatologie n'a pas besoin de l'IFS, donc la tâche tourne dès le jeudi.
+- Prérequis : le secret GitHub `AIWQ_PASSWORD` (le jeton ECBox).

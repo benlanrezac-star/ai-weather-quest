@@ -64,6 +64,40 @@ def test_failed_check_stops_before_upload():
                    lambda *a: pytest.fail("uploaded"))
 
 
+@pytest.mark.parametrize(
+    "today, expected",
+    [
+        ("2026-11-26", "2026-11-26"),  # Thursday itself
+        ("2026-11-27", "2026-11-26"),  # Friday
+        ("2026-11-29", "2026-11-26"),  # Sunday, last day of the window
+        ("2026-12-02", "2026-11-26"),  # Wednesday before the next one
+    ],
+)
+def test_latest_thursday(today, expected):
+    from datetime import date
+
+    assert submit.latest_thursday(date.fromisoformat(today)).isoformat() == expected
+
+
+def test_all_submitted_needs_both_periods():
+    assert submit.all_submitted("20261126", "pw", lambda s, p, pw: True)
+    assert not submit.all_submitted("20261126", "pw", lambda s, p, pw: p == "1")
+
+
+def test_append_log_writes_header_once(tmp_path):
+    from datetime import datetime, timezone
+
+    log = tmp_path / "submissions.csv"
+    t = datetime(2026, 11, 26, 9, 13, tzinfo=timezone.utc)
+    submit.append_log(log, "20261126", "submitted", t)
+    submit.append_log(log, "20261126", "already_submitted", t)
+    assert log.read_text(encoding="utf-8").splitlines() == [
+        "fc_start_date,status,logged_utc",
+        "20261126,submitted,2026-11-26T09:13:00Z",
+        "20261126,already_submitted,2026-11-26T09:13:00Z",
+    ]
+
+
 def test_get_password_from_env_file(tmp_path, monkeypatch):
     monkeypatch.delenv("AIWQ_PASSWORD", raising=False)
     env = tmp_path / ".env"

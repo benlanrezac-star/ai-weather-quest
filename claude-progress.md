@@ -88,3 +88,4 @@ Statut : terminée côté Claude ; D-009 en attente de Benjamin.
 - 12/11 : contrôle à blanc OK, mais soumission non lancée faute de feu vert.
 - 25/11 : 12/11 et 19/11 confirmés manquants → exclusion du classement DJF. D-011 proposée (cible MAM 2027).
 - Cause : la chaîne dépend d'une action manuelle (feu vert + commande) ; aucune automatisation en place. C'est le risque n° 3 réalisé en avance.
+- 26/11 : autorisation permanente (D-012). Semaine du 26/11 soumise à 09:13 UTC. Workflow `submit.yml` ajouté (jeu./ven./sam. 06:00 UTC, idempotent, journal commité). 44 tests.
